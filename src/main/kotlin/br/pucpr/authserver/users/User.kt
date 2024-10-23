@@ -26,5 +26,6 @@ class User(
         joinColumns = [JoinColumn(name="idUser")],
         inverseJoinColumns = [JoinColumn(name="idRole")]
     )
-    val roles: MutableSet<Role> = mutableSetOf()
+    val roles: MutableSet<Role> = mutableSetOf(),
+
 )
